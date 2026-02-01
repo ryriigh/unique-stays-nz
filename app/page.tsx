@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import stays from "../data/stays.json";
+import stays from "@/data/stays.json";
 
 export default function Home() {
   return (

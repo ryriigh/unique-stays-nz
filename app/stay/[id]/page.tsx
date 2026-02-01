@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import stays from "../../data/stays.json";
+import stays from "@/data/stays.json";
 
 interface Props {
   params: { id: string };
