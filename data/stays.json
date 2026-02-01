@@ -1,0 +1,38 @@
+[
+  {
+    "id": "wanaka-glass-pod",
+    "title": "The Astral Pod",
+    "location": "Wanaka, Otago",
+    "type": "Glass Pod",
+    "price": "$350",
+    "rating": 4.9,
+    "description": "Sleep under the Milky Way in this fully transparent glass pod. Located on a private high-country station, you're miles from civilization but surrounded by luxury.",
+    "amenities": ["Stargazing", "Outdoor Bath", "Heating", "Breakfast"],
+    "image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80",
+    "affiliateLink": "#"
+  },
+  {
+    "id": "raglan-treehouse",
+    "title": "Kauri Canopy High-House",
+    "location": "Raglan, Waikato",
+    "type": "Treehouse",
+    "price": "$290",
+    "rating": 4.8,
+    "description": "Suspended 10 meters above the forest floor, this architectural marvel offers ocean views and birdsong wake-up calls. Off-grid luxury at its finest.",
+    "amenities": ["Ocean View", "Off-grid", "Deck", "Surfing nearby"],
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+    "affiliateLink": "#"
+  },
+  {
+    "id": "waitomo-silo",
+    "title": "The Grain Silo",
+    "location": "Waitomo, King Country",
+    "type": "Converted Silo",
+    "price": "$210",
+    "rating": 4.7,
+    "description": "Industrial chic meets rural tranquility. A converted grain silo with a mezzanine bedroom and a skylight for stargazing.",
+    "amenities": ["Unique Architecture", "Farm Tour", "Kitchenette"],
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=80",
+    "affiliateLink": "#"
+  }
+]
