@@ -49,6 +49,10 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-stone-200 py-12 text-center text-stone-500 text-sm">
+        <div className="flex justify-center gap-6 mb-4">
+          <Link href="/about" className="hover:text-stone-900">About</Link>
+          <Link href="/privacy" className="hover:text-stone-900">Privacy & Terms</Link>
+        </div>
         <p>© 2026 Unique Stays NZ. Curated by AI.</p>
       </footer>
     </div>
