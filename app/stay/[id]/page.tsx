@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import stays from "@/data/stays.json";
+import JsonLd from "@/app/components/JsonLd";
 
 interface Props {
   params: { id: string };
@@ -21,8 +22,29 @@ export default function StayPage({ params }: Props) {
     notFound();
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": stay.title,
+    "image": [stay.image],
+    "description": stay.description,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": stay.location.split(',')[0].trim(),
+      "addressRegion": stay.location.split(',')[1]?.trim(),
+      "addressCountry": "NZ"
+    },
+    "priceRange": stay.price,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": stay.rating,
+      "reviewCount": "20"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 font-sans">
+      <JsonLd data={structuredData} />
       <nav className="p-6">
         <Link href="/" className="text-stone-500 hover:text-stone-900 transition-colors">
           ← Back to directory

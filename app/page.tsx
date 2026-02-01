@@ -50,6 +50,7 @@ export default function Home() {
 
       <footer className="border-t border-stone-200 py-12 text-center text-stone-500 text-sm">
         <div className="flex justify-center gap-6 mb-4">
+          <Link href="/journal" className="hover:text-stone-900">Journal</Link>
           <Link href="/about" className="hover:text-stone-900">About</Link>
           <Link href="/privacy" className="hover:text-stone-900">Privacy & Terms</Link>
         </div>
